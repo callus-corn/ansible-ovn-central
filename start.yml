@@ -1,11 +1,11 @@
 ---
 
-- name: install ovn_central
+- name: start ovn_central
   hosts: ovn_central
   become: yes
   tasks:
 
-    - name: install ovn_central
+    - name: start ovn_central
       import_role:
         name: ovn_central
       vars:
