@@ -10,4 +10,4 @@
         name: ovn_central
       vars:
         ovn_central_action: start
-      tags: install_ovn_central
+      tags: start_ovn_central
