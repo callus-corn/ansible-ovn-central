@@ -1,0 +1,13 @@
+---
+
+- name: install ovn_central
+  hosts: ovn_central
+  become: yes
+  tasks:
+
+    - name: install ovn_central
+      import_role:
+        name: ovn_central
+      vars:
+        ovn_central_action: start
+      tags: install_ovn_central

@@ -1,0 +1,4 @@
+---
+
+- name: import {{ ovn_central_action }}.yml
+  import_tasks: "{{ ovn_central_action }}.yml"

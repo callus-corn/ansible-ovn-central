@@ -1,0 +1,13 @@
+---
+
+- name: setting ovn_central
+  hosts: ovn_central
+  become: yes
+  tasks:
+
+    - name: setting ovn central
+      import_role:
+        name: ovn_central
+      vars:
+        ovn_central_action: setting
+      tags: setting_ovn_central
